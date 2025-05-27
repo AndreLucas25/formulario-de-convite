@@ -1,0 +1,14 @@
+form{
+  margin-top: 3rem;
+}
+
+fieldset{
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+legend{
+  font: var(--heading-md);
+  color: var(--text-heading);
+}

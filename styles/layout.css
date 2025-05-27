@@ -37,13 +37,9 @@ aside{
 
 main{
   overflow: auto;
-  
-  .main-container{
-    background-color: var(--shape-background);
-    padding-block: 80px;
-    padding-inline: 80px; 
-    border-radius: 1.25rem;
-    
-    
-  }
+  background-color: var(--shape-background);
+  padding-block: 5rem;
+  padding-inline: 8rem;
+  border-radius: 1.25rem;
+ 
 }
