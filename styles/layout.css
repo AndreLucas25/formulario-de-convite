@@ -1,0 +1,49 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+  
+  margin: 1.25rem;
+  overflow: hidden;
+}
+
+aside{
+  position: relative;
+  
+  .aside-container{
+    max-width: 31rem;
+    
+  }
+
+  header{
+    position: absolute;
+    display: grid;
+    gap: .75rem;
+    padding: 3.125rem;
+
+    h1{
+      font: var(--logo);
+      color: var(--pink);
+      margin-bottom: .75rem;
+    }
+
+    p{
+      color: var(--text-heading);
+    }
+  }
+  img{
+    border-radius: 1.25rem;
+  }
+}
+
+main{
+  overflow: auto;
+  
+  .main-container{
+    background-color: var(--shape-background);
+    padding-block: 80px;
+    padding-inline: 80px; 
+    border-radius: 1.25rem;
+    
+    
+  }
+}
