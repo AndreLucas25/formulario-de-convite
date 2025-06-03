@@ -58,6 +58,5 @@
 
 body{
   overflow: hidden;
-  background-color: black;
-  font: var(--body-md);
+  background-color: var(--shape-background);
 }
