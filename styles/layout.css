@@ -1,8 +1,6 @@
 #app{
   display: grid;
-  gap: 2.5rem;
   grid-template-columns: 35.625% 64.375%;
-  margin: 1rem;
   height: 100vh;
   overflow: hidden;
   border-radius: 0.75rem;
@@ -10,11 +8,44 @@
 
 aside{
   padding: 5rem;
+    
+    .aside-container{
+      max-width: 29rem;
+      position: relative;
 
-  .aside-container{
-    max-width: 25rem;
-    margin-left: auto;
+    .img-aside{
+      width: 100%;
+      border-radius: 0.75rem;
+    }
+
+    .logo{
+      
+      position: absolute;
+      top: 1.5rem;
+      left: 2rem;
+    }
+
+    h1{
+      position: absolute;
+      top: 4.5rem;
+      left: 2rem;
+
+      font: var(--logo);
+      color: var(--pink);
+    }
+
+    p{
+      position: absolute;
+      top: 8.5rem;
+      left: 2rem;
+
+      font: var(--body-sm);
+      color: var(--text-body);
+    }
   }
+    
+    
+  
 }
 
 
@@ -23,9 +54,9 @@ main{
   padding: 5rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
+  
 
   .main-container{
     max-width: 51.25rem;
-
   }
 }
