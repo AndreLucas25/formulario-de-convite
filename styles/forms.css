@@ -1,0 +1,6 @@
+legend{
+  display: flex;
+  font: var(--body-md);
+  color: var(--text-heading);
+  gap: 0.75rem;
+}

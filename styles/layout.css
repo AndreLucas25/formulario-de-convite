@@ -9,54 +9,57 @@
 aside{
   padding: 5rem;
     
-    .aside-container{
-      max-width: 29rem;
+    & .aside-container{
+      max-width: 25rem;
       position: relative;
 
-    .img-aside{
-      width: 100%;
-      border-radius: 0.75rem;
-    }
+      .img-aside{
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        border-radius: 0.75rem;
+      }
 
-    .logo{
-      
-      position: absolute;
-      top: 1.5rem;
-      left: 2rem;
-    }
+      header{
+        grid: 10rem;
+        margin-left: 2.5rem;
+        .logo{
+          padding-top: 2rem;
+          /*top: 1.5rem;
+          left: 2rem;*/
+        }
 
-    h1{
-      position: absolute;
-      top: 4.5rem;
-      left: 2rem;
+        h1{
+          
+          margin-block: 1rem rem;
+          /*top: 5rem;
+          left: 2rem;*/
+          font: var(--logo);
+          color: var(--pink);
+        }
 
-      font: var(--logo);
-      color: var(--pink);
-    }
-
-    p{
-      position: absolute;
-      top: 8.5rem;
-      left: 2rem;
-
-      font: var(--body-sm);
-      color: var(--text-body);
-    }
+        p{
+          
+          /*top: 9rem;
+          left: 2rem;*/
+          font: var(--body-sm);
+          color: var(--text-body);
+        }
+      }
   }
-    
-    
-  
 }
 
 
 main{
   overflow: auto;
-  padding: 5rem;
+  padding-block: 8rem;
+  padding-inline: 8rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
-  
 
-  .main-container{
+  & .main-container{
     max-width: 51.25rem;
+    display: grid;
+    gap: 2.5rem;
   }
 }

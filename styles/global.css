@@ -54,9 +54,15 @@
   --body-md: 400 1.5rem var(--font-family-3);
   --body-sm: 400 .875rem var(--font-family-3);
   --body-xs: 400 .75rem var(--font-family-3);
+
+  zoom: 60%
 }
 
 body{
   overflow: hidden;
   background-color: var(--shape-background);
+}
+
+img{
+  max-width: 100%;
 }
