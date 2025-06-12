@@ -59,7 +59,5 @@ main{
 
   & .main-container{
     max-width: 51.25rem;
-    display: grid;
-    gap: 2.5rem;
   }
 }
