@@ -30,8 +30,6 @@ aside{
         }
 
         h1{
-          
-          margin-block: 1rem rem;
           /*top: 5rem;
           left: 2rem;*/
           font: var(--logo);
@@ -39,7 +37,6 @@ aside{
         }
 
         p{
-          
           /*top: 9rem;
           left: 2rem;*/
           font: var(--body-sm);
