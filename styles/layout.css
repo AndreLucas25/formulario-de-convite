@@ -4,6 +4,11 @@
   height: 100vh;
   overflow: hidden;
   border-radius: 0.75rem;
+
+  form{
+    display: grid;
+    gap: 3rem;
+  }
 }
 
 aside{
