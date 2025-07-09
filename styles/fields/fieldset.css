@@ -1,0 +1,147 @@
+input {
+  appearance: none;
+}
+
+.sec-1 {
+
+  input,
+  textarea {
+    appearance: none;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid var(--input-placeholder);
+    background-color: var(--input-base);
+    padding: 1rem;
+    font: var(--body-sm);
+    color: var(--input-placeholder);
+
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: .05rem solid var(--brand-light);
+    color: var(--text-heading);
+  }
+
+  /*input:invalid, textarea:invalid{
+  outline: .05rem solid #FF5959;
+  border: .125rem solid red;
+}*/
+
+  input[type="date"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+      position: absolute;
+      background-image: url(../../assets/icons/calendar.svg);
+      right: 1rem;
+    }
+  }
+
+  textarea {
+    padding-bottom: 6.25rem;
+  }
+
+
+  .radio-wrapper {
+    border: 1px solid var(--input-placeholder);
+    border-radius: .5rem;
+    padding: 0.25rem;
+    background-color: var(--input-base);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    gap: .5rem;
+
+
+    .radio-iner {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-content: center;
+      position: relative;
+      padding: .7rem;
+
+      input,
+      input:focus,
+      input:hover {
+        all: unset;
+        position: absolute;
+        inset: 0;
+
+      }
+
+      svg {
+        align-self: center;
+      }
+
+      label {
+        margin-bottom: 0;
+      }
+
+      &:has(:checked) {
+        background-color: var(--input-stroke);
+
+        border-radius: .5rem;
+
+        svg {
+          stroke: #59B2FF;
+        }
+
+        label {
+          color: #f9f9f9;
+        }
+      }
+
+    }
+
+  }
+}
+
+.sec-2 {
+  .cores {
+    label {
+      margin-top: 1.5rem;
+    }
+
+    .radio-wrapper {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .radio-iner {
+
+      input {
+        appearance: none;
+        margin-top: 1rem;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 8px solid var(--shape-button);
+      }
+
+      input:hover,
+      input:focus {
+        border: 8px solid var(--shape-hover);
+      }
+
+      input[type="radio"]:checked {
+        border: 8px solid var(--shape-button);
+        outline: 4px solid #59B2FF;
+      }
+
+    }
+  }
+
+  .temas {
+    .radio-wrapper {
+      display: grid;
+      gap: .5rem;
+      .radio-iner {
+
+        background-color: var(--input-stroke);
+        padding: .25rem .25rem .5rem .25rem;
+      }
+    }
+  }
+}

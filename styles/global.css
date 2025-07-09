@@ -7,7 +7,7 @@
 :root{
   /*Cores*/
   /*Brand*/
-  --brlightand-: #59B2FF;
+  --brand-light: #59B2FF;
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
 
@@ -63,6 +63,32 @@ body{
   background-color: var(--shape-background);
 }
 
+form{
+  margin-top: 3rem;
+}
+
+fieldset{
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+legend{
+  display: flex;
+  font: var(--body-md);
+  color: var(--text-heading);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
 img{
   max-width: 100%;
 }
+
+label{
+  font: var(--body-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
