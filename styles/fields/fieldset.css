@@ -31,7 +31,6 @@ input {
 
   input[type="date"] {
     position: relative;
-
     &::-webkit-calendar-picker-indicator {
       position: absolute;
       background-image: url(../../assets/icons/calendar.svg);
@@ -135,12 +134,32 @@ input {
 
   .temas {
     .radio-wrapper {
+      margin-top: 1rem;
       display: grid;
       gap: .5rem;
-      .radio-iner {
 
+      .radio-iner {
+        display: grid;
+        place-items: center;
+        position: relative;
         background-color: var(--input-stroke);
-        padding: .25rem .25rem .5rem .25rem;
+        padding: .40rem .40rem .5rem .40rem;
+        border-radius: .25rem;
+        text-align: center;
+
+        input {
+          position: absolute;
+          inset: 0;
+          border-radius: .25rem;
+        }
+
+        label {
+          margin-top: .45rem;
+        }
+      }
+
+      input[type="radio"]:checked {
+        border: 3px solid var(--brand-light);
       }
     }
   }

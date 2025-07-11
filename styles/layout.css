@@ -1,8 +1,7 @@
 #app{
   display: grid;
   grid-template-columns: 35.625% 64.375%;
-  height: 100vh;
-  overflow: hidden;
+  /*height: 100vh;*/
   border-radius: 0.75rem;
 
   form{
@@ -13,7 +12,8 @@
 
 aside{
   padding: 5rem;
-    
+  overflow: hidden;
+
     & .aside-container{
       max-width: 25rem;
       position: relative;
