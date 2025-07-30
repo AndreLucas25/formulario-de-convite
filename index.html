@@ -32,7 +32,7 @@
       <div class="main-container">
         <h1 class="heading-md text-heading">Crie seu convite</h1>
 
-        <form>
+        <form enctype="multipart/form-data">
 
           <fieldset class="sec-1">
 
@@ -238,6 +238,35 @@
               </div>
             </div>
             
+            <div class="flex">
+
+              <div class="input-wrapper estilo flex-1" id="brand">
+                <label for="estilo">Estilo</label>
+                <div class="radio-wrapper">
+              
+                  <div class="radio-iner">
+                    <input type="radio"
+                    name="estilo"
+                    value="escuro"
+                    id="escuro"
+                    checked
+                    >
+                  </div>
+                  
+                  <div class="radio-iner">
+                    <input type="radio"
+                     name="estilo"
+                     value="claro"
+                     id="claro"
+                     >
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
           </fieldset>
 
         </form>

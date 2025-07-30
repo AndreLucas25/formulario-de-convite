@@ -1,4 +1,4 @@
-input {
+input{
   appearance: none;
 }
 
@@ -31,6 +31,7 @@ input {
 
   input[type="date"] {
     position: relative;
+
     &::-webkit-calendar-picker-indicator {
       position: absolute;
       background-image: url(../../assets/icons/calendar.svg);
@@ -132,6 +133,7 @@ input {
     }
   }
 
+
   .temas {
     .radio-wrapper {
       margin-top: 1rem;
@@ -163,4 +165,76 @@ input {
       }
     }
   }
+
+  .estilo {
+    label {
+      margin-block: 1.5rem;
+    }
+
+    .radio-wrapper {
+      border: 2px solid var(--input-stroke);
+      background-color: var(--input-base);
+      width: 8rem;
+      height: 4.2rem;
+      padding: .5rem;
+      border-radius: 2rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    
+
+    .radio-iner{
+      position: relative;
+    }
+
+    input{
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--input-stroke);
+      border-radius: 50%; 
+      cursor: pointer;
+      opacity: 0;
+    }  
+
+    input:checked{
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--input-stroke);
+      border-radius: 50%; 
+      cursor: pointer;
+      opacity: 100;
+    }
+
+    input[value="escuro"]::before{
+      position: absolute;
+      left: 9rem;
+      top: .5rem;
+      content: "Escuro";
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    input[value="claro"]:checked{
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--text-heading);
+      border-radius: 50%; 
+      cursor: pointer;
+      opacity: 100;
+    }
+
+    input[value="claro"]::before{
+      position: absolute;
+      left: 5rem;
+      top: .5rem;
+      content: "Claro";
+      color: var(--text-heading);
+      font-size: 1.5rem;
+    }
+    /*Está incompleto, não consegui mudar o fundo juntamente com o radio*/ 
+  
+  }
+
+  
 }

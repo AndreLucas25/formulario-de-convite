@@ -1,8 +1,9 @@
 #app{
   display: grid;
   grid-template-columns: 35.625% 64.375%;
-  /*height: 100vh;*/
+  height: 100vh;
   border-radius: 0.75rem;
+  overflow: hidden;
 
   form{
     display: grid;
